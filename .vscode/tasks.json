@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Current C File (OpenGL)",
+      "type": "shell",
+      "command": "clang",
+      "args": [
+        "${file}", // Current open file
+        "-o",
+        "${fileDirname}/out", // Output executable in same folder
+        "-framework",
+        "OpenGL",
+        "-framework",
+        "GLUT",
+        "-DGL_SILENCE_DEPRECATION",
+        "&&",
+        "${fileDirname}/out"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
