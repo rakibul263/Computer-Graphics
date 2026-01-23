@@ -1,3 +1,5 @@
+### [FreeGLUT Setup on Windows](#freeglut-setup-for-codeblocks-on-windows)
+
 # OpenGL C Programming on macOS (Apple Silicon)
 
 This guide provides a complete setup for running OpenGL applications using the native **GLUT** framework on macOS M1/M2/M3 chips using **VS Code**.
