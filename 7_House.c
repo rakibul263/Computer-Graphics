@@ -27,6 +27,15 @@ void drawHouse(void) {
         glVertex2f(0.45f, 0.4f);
     glEnd();
 
+    // White middle line
+    glColor3f(1,1,1);
+    glLineWidth(3);
+
+    glBegin(GL_LINES);
+        glVertex2f(0.50f, 0.2f); // নিচের point
+        glVertex2f(0.50f, 0.4f); // উপরের point
+    glEnd();
+
     // Left window (blue glass)
     glColor3f(0.53f, 0.81f, 0.98f);
     glBegin(GL_POLYGON);
@@ -36,13 +45,16 @@ void drawHouse(void) {
         glVertex2f(0.28f, 0.45f);
     glEnd();
 
-    // Right window (blue glass)
-    glBegin(GL_POLYGON);
-        glVertex2f(0.62f, 0.35f);
-        glVertex2f(0.72f, 0.35f);
-        glVertex2f(0.72f, 0.45f);
-        glVertex2f(0.62f, 0.45f);
-    glEnd();
+    // // grill on window
+    // glColor3f(1,1,1);
+    // glLineWidth(3);
+    //  glBegin(GL_LINES);
+    //     glVertex2f(0.35f, 0.35f);
+    //     glVertex2f(0.35f, 0.52f);
+    //     glVertex2f(0.32f, 0.48f);
+    //     glVertex2f(0.38f, 0.48f);
+    // glEnd();
+
 
     // Window frames (black outlines)
     glColor3f(0.0f, 0.0f, 0.0f);
@@ -69,7 +81,29 @@ void drawHouse(void) {
         glVertex2f(1.0f, 0.2f);
         glVertex2f(0.0f, 0.2f);
     glEnd();
+
+
+
+    // line
+    glColor3f(0.0f, 0.0f, 0.0f);
+    glLineWidth(5);
+
+    glBegin(GL_LINES);
+        glVertex2f(0.08f, 0.2f);
+        glVertex2f(0.08f, 0.8f);
+    glEnd();
+
+    // flag
+    glColor3f(0.0f, 0.0f, 1.0f);
+    glBegin(GL_POLYGON);
+        glVertex2f(0.08f, 0.7f);
+        glVertex2f(0.08f, 0.8f);
+        glVertex2f(0.22f, 0.8f);
+        glVertex2f(0.22f, 0.7f);
+    glEnd();
 }
+
+
 
 void display(void) {
     glClear(GL_COLOR_BUFFER_BIT);  // Clear screen

@@ -1,7 +1,7 @@
 #include<GLUT/glut.h>
 
 void display(void) {
-    glClear(GL_COLOR_BUFFER_BIT);       // Clear screen
+    glClear(GL_COLOR_BUFFER_BIT);
 
     // White polygon
     glColor3f(1.0, 1.0, 1.0);
